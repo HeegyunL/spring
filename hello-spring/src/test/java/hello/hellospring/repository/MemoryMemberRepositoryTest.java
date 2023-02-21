@@ -10,12 +10,9 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class MemoryMemberRepositoryTest {
-    MemberRepository repository = new MemoryMemeberRepository();
+    MemberRepository repository = new MemoryMemberRepository();
 
-    @AfterEach
-    public void afterEach() {
-        repository.clearStore();
-    }
+
     @Test
     public void save() {
         Member member = new Member();
